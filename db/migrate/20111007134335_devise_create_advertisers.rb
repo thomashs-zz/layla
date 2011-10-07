@@ -20,7 +20,6 @@ class DeviseCreateAdvertisers < ActiveRecord::Migration
     # add_index :advertisers, :confirmation_token,   :unique => true
     # add_index :advertisers, :authentication_token, :unique => true
   end
-
   def self.down
     drop_table :advertisers
   end
