@@ -7,7 +7,7 @@ class DeviseCreateAdvertisers < ActiveRecord::Migration
       t.trackable
       t.timestamps
       t.lockable
-      #
+      # 
       t.string :name
       t.string :cnpj
       t.string :website_url

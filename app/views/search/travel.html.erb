@@ -1,0 +1,44 @@
+<% content_for :title do %>
+Comparador de Ofertas
+<% end %>
+
+<% content_for :header do %>
+<div class='wrapper'>
+	<%= render :partial => 'partials/header' %>
+</div>
+<% end %>
+
+<% content_for :body do %>
+	<div class='search-result'>
+		<table>
+			<tr>
+				<th class='white no-vertical-padding'>
+					<span class='small dark-gray'>Categoria selecionada:</span><br/>
+					<span class='medium black'>Viagens (100)</span>
+				</th>
+				<th>Localização</th>
+				<th>Diárias</th>
+				<th>Pessoas</th>
+				<th>Transporte</th>
+				<th>Acomodação</th>
+				<th></th>
+			</tr>
+			<% 10.times do %>
+			<tr>
+				<td class='no-vertical-padding' rowspan="2"><div style='width:183px;height:122px;border:solid 1px #CCCCCC;background-color:#EAEAEA;'></div></td>
+				<td colspan="5">Título por extenso</td>
+				<td rowspan="2" class='controller'>
+					<%= image_tag 'controller.jpg' %>
+				</td>
+			</tr>
+			<tr>
+				<td>Localização</td>
+				<td>Diárias</td>
+				<td>Pessoas</td>
+				<td>Transporte</td>
+				<td>Acomodação</td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+<% end %>
